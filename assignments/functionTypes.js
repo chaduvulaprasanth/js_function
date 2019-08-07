@@ -16,24 +16,102 @@
 function convertToString(n) {
   return String(n);
 }
+// Function Expression
+var convertToString = function(n) {
+	return String(n);
+}
+//Arrow Function Without Curly Braces
+var convertToString = (n) => String(n);
+//Arrow Function With Curly Braces
+var convertToString = (n) => {
+	return String(n);
+}
+//Function Invocation
+function convertToString(n) {
+  return String(n);
+}
+convertToString(1)
+
 
 // Function Expression
 let convertToString1 = function(n) {
   return String(n);
 };
+//Function Decleration
+function convertToString1(n) {
+	return String(n);
+}
+//Function Invocation
+function convertToString1(n) {
+  return String(n);
+}
+convertToString(2)
+//Arrow Function Without Curly Braces
+let convertToString1 = (n) => String(n);
+//Arrow Function With Curly Braces
+let convertToString1 = (n) => {
+	return String(n);
+}
 
 // Arrow Function
 let convertToString = n => String(n);
+// Arrow Function With Curly Bracket
+let convertToString = n => {
+	return String(n);
+}
+//Function Decleration
+function convertToString(n) {
+	return String(n);
+}
+// Function Expression
+let convertToString = function(n) {
+	return String(n);
+}
+//Function Invocation
+function convertToString(n) {
+  return String(n);
+}
+convertToString(3)
 
 // Arrow Function With Curly Bracket
 
 let convertToString = n => {
   return String(n);
 };
+// Arrow Function
+let convertToString = n => String(n);
+// Function  Decleration
+function convertToString(n) {
+	return String(n);
+}
+//Function Invocation
+function convertToString(n) {
+  return String(n);
+}
+convertToString(6)
+// Function Expression
+let convertToString = function(n) {
+	return String(n);
+}
+
 
 // Function Invocation
 
 convertToString(21); // "21"
+//Function Decleration
+function convertToString(n) {
+  return String(n);
+}
+// Function Expression
+var convertToString = function(n) {
+	return String(n);
+}
+//Arrow Function Without Curly Braces
+var convertToString = (n) => String(n);
+//Arrow Function With Curly Braces
+var convertToString = (n) => {
+	return String(n);
+}
 
 // Example End
 
@@ -42,26 +120,39 @@ convertToString(21); // "21"
  * @param {number} n
  * @return {number}
  */
-
+ function param(number) {
+ 	return ++number;
+ }
+param(7)
 /**
  * Subtracts one from a given number.
  * @param {number} n
  * @return {number}
  */
-
+function param(number) {
+ 	return --number;
+ }
+param(7)
 /**
  * Adds two numbers.
  * @param {number} x
  * @param {number} y
  * @return {number} the sum
  */
-
+function param(x,y) {
+ 	return (x+y);
+ }
+param(1,2)
 /**
  * Subtracts the second number from the first.
  * @param {number} x
  * @param {number} y
  * @return {number} the difference
  */
+ function param(x,y) {
+ 	return (x-y);
+ }
+param(5,4)
 
 /**
  * Multiplies two numbers.
@@ -69,14 +160,20 @@ convertToString(21); // "21"
  * @param {number} y
  * @return {number} the product
  */
-
+function param(x,y) {
+ 	return (x*y);
+ }
+param(8,9)
 /**
  * Divides the first number by the second.
  * @param {number} x
  * @param {number} y
  * @return {number} the quotient
  */
-
+function param(x,y) {
+ 	return (x/y);
+ }
+param(4,2)
 /**
  * Multiplies a number by itself.
  * @param {number} x, number to be squared
