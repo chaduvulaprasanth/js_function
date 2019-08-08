@@ -120,28 +120,65 @@ var convertToString = (n) => {
  * @param {number} n
  * @return {number}
  */
- function param(number) {
+ //Function Decleration
+ function param(n) {
  	return ++number;
  }
-param(7)
+// Function Expression
+var param = function(n) {
+	return ++n;
+}
+//Arrow Function Without Curly Braces
+var param = (n) => ++n;
+//Arrow Function With Curly Braces
+var param = (n) => {
+	return ++number;
+}
+// Function Invocation
+param(2)
 /**
  * Subtracts one from a given number.
  * @param {number} n
  * @return {number}
  */
+
+//Function Decleration
 function param(number) {
  	return --number;
- }
-param(7)
+}
+// Function Expression
+var param = function(n) {
+	return --n;
+}
+//Arrow Function Without Curly Braces
+var param = (n) => --n;
+//Arrow Function With Curly Braces
+var param = (n) => {
+	return --n;
+}
+// Function Invocation
+param(3)
 /**
  * Adds two numbers.
  * @param {number} x
  * @param {number} y
  * @return {number} the sum
  */
+//Function Decleration
 function param(x,y) {
  	return (x+y);
- }
+}
+// Function Expression
+var param = function(x,y) {
+	return (x+y)
+}
+//Arrow Function Without Curly Braces
+var param = (x,y) => x+y;
+//Arrow Function With Curly Braces
+var param = (x,y) => {
+	return (x+y);
+}
+// Function Invocation
 param(1,2)
 /**
  * Subtracts the second number from the first.
@@ -149,9 +186,21 @@ param(1,2)
  * @param {number} y
  * @return {number} the difference
  */
- function param(x,y) {
+//Function Decleration
+function param(x,y) {
  	return (x-y);
- }
+}
+// Function Expression
+var param = function(x,y) {
+	return (x-y);
+}
+//Arrow Function Without Curly Braces
+var param = (x,y) => (x-y);
+//Arrow Function With Curly Braces
+var param = (x,y) => {
+	return (x-y);
+}
+// Function Invocation
 param(5,4)
 
 /**
@@ -160,26 +209,66 @@ param(5,4)
  * @param {number} y
  * @return {number} the product
  */
+//Function Decleration
 function param(x,y) {
  	return (x*y);
- }
+}
+// Function Expression
+var param = function(x,y) {
+	return (x*y);
+}
+//Arrow Function Without Curly Braces
+var param = (x,y) => (x*y);
+//Arrow Function With Curly Braces
+var param = (x,y) => {
+	return (x*y);
+}
+// Function Invocation
 param(8,9)
+
 /**
  * Divides the first number by the second.
  * @param {number} x
  * @param {number} y
  * @return {number} the quotient
  */
+//Function Decleration
 function param(x,y) {
  	return (x/y);
- }
+}
+// Function Expression
+var param = function(x,y) {
+	return (x/y);
+}
+//Arrow Function Without Curly Braces
+var param = (x,y) => (x/y);
+//Arrow Function Wih Curly Braces
+var param = (x,y) => {
+	return (x/y);
+}
+// Function Invocation
 param(4,2)
 /**
  * Multiplies a number by itself.
  * @param {number} x, number to be squared
  * @return {number} squared
  */
-
+//Function Decleration
+function param(x) {
+ 	return (x**2);
+ }
+// Function Expression
+var param = function(x){
+	return (x**2);
+} 
+//Arrow Function Without Curly Braces
+var param = (x) => x**2;
+//Arrow Function Wih Curly Braces
+var param = (x) => {
+	return (x**2);
+}
+// Function Invocation
+param(2)
 /**
  * Performs a mathematical operation on two numbers.
  * Also prints out the equation: (i.e.) "1 + 5 = 6" or "8 / 2 = 4".
@@ -188,6 +277,55 @@ param(4,2)
  * @param {number} y
  * @return {number} the result
  */
+//Function Decleration
+function param (x,y,operation) {
+	if(operation=="+") {
+		return (x+y);
+	}
+	else if(operation=="-") {
+		return (x-y);
+	}
+	else if(operation=="*") {
+		return (x*y);
+	}
+	else if(operation=="/") {
+		return (x/y);
+	}
+}
+// Function Expression
+var param = function(x,y,operation) {
+	if(operation=="+") {
+		return (x+y);
+	}
+	else if(operation=="-") {
+		return (x-y);
+	}
+	else if(operation=="*") {
+		return (x*y);
+	}
+	else if(operation=="/") {
+		return (x/y);
+	}
+
+}
+//Arrow Function With Curly Braces
+var param = (x,y,operation) => {
+	if(operation=="+") {
+		return (x+y);
+	}
+	else if(operation=="-") {
+		return (x-y);
+	}
+	else if(operation=="*") {
+		return (x*y);
+	}
+	else if(operation=="/") {
+		return (x/y);
+	}
+
+}
+// Function Invocation
+param(2,3,"+")
 
 /**
  * Returns true if `a` is greater than `b`.
@@ -195,20 +333,48 @@ param(4,2)
  * @param {number} b
  * @return {boolean} `a` is larger than `b`
  */
+//Function Decleration
+function param(a,b){
+	if (a > b) {
+		return(true)
+	}
+}
+// Function Expression
+var param = function(a,b) {
+	if (a > b) {
+		return(true)
+	}
 
+}
+//Arrow Function With Curly Braces
+var param = (a,b) => {
+	if (a > b) {
+		return(true)
+	}
+
+}
 /**
  * Returns true if `a` is less than `b`.
  * @param {number} a
  * @param {number} b
  * @return {boolean} `a` is smaller than `b`
  */
-
+function param(a,b) {
+	if (a < b) {
+		return true;
+	}
+}
 /**
  * Returns true if `a` and `b` are equal.
  * @param {number} a
  * @param {number} b
  * @return {boolean} the numbers are equal
  */
+ function param(a,b) {
+ 	if (a==b) {
+ 		return true;
+ 	}
+ }
 
 /**
  * Returns the smallest value of two numbers.
@@ -216,25 +382,48 @@ param(4,2)
  * @param {number} y
  * @return {number} the smallest number
  */
-
+function param(x,y) {
+	if (x < y) {
+		return x;
+	}
+	else if ( y < x) {
+		return y;
+	}
+}
 /**
  * Returns the largest value of two numbers.
  * @param {number} x
  * @param {number} y
  * @return {number} the largest number
  */
-
+function param(x,y) {
+	if (x > y) {
+		return x;
+	}
+	else if ( y > x) {
+		return y;
+	}
+}
 /**
  * Returns true if `n` is even.
  * @param {number} n
  * @return {boolean} the number is even
  */
-
+function param(n) {
+	if (n%2==0) {
+		return true;
+	}
+}
 /**
  * Returns true if `n` is odd.
  * @param {number} n
  * @return {boolean} the number is odd
  */
+ function param(n) {
+ 	if(n%2==1) {
+ 		return true;
+ 	}
+ }
 
 /**
  * Returns a letter grade.
@@ -254,3 +443,6 @@ param(4,2)
  * @param {string} word2
  * @return {string} joined the words joined with a space
  */
+function param(word1,word2){
+return (word1+" "+word2);
+}
