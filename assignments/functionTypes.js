@@ -353,6 +353,8 @@ var param = (a,b) => {
 	}
 
 }
+// Function Invocation
+param(5,4)
 /**
  * Returns true if `a` is less than `b`.
  * @param {number} a
@@ -436,7 +438,27 @@ function param(n) {
  * @param {number} total maximum possible score
  * @return {string} the score represented as a letter grade
  */
+function lettergrade(marks,totalmarks) {
+	var percentage = marks/totalmarks*100;
+	switch(true){
+		case (percentage<=100 && percentage>=90):
+		alert("A");
+		break;
+		case (percentage<=89 && percentage>=80):
+		alert("B");
+		break;
+		case (percentage<=79 && percentage>=70):
+		alert("C");
+		break;
+		case (percentage<=69 && percentage>=60):
+		alert("D");
+		break;
+		case (percentage<=50 && percentage>=0):
+		alert("F");
+		break;
 
+	}
+}
 /**
  * Joins two strings with a space.
  * @param {string} word1
