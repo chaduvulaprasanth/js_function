@@ -6,6 +6,12 @@
 
 ```js
 // your code goes here
+function calculateDogAge(age) {
+var dogage = age*7;
+console.log(`Your doggie is ${dogage} years old in dog years!`);
+}
+
+
 ```
 2. 🎖Write a function named calculateSupply that:
   * [ ] takes 2 arguments: age, amount per day.
@@ -15,6 +21,12 @@
 
 ```js
 // your code goes here
+function calculateSupply(age, amountperday) {
+  var max_age = 40;
+  cons
+  
+
+}
 ```
 3. 🎖Create a function called celsiusToFahrenheit:
   * [ ] Store a celsius temperature into a variable.
@@ -25,6 +37,14 @@
 
 ```js
 // your code goes here
+function celsiusToFahrenheit(celsius_temperature) {
+  var fahrenheit_temperature =  (celsius_temperature * 9/5) + 32;
+  console.log(fahrenheit_temperature);
+
+}
+function fahrenheit_temperature(fahrenheit_temperature) {
+  var celsius_temperature = (fahrenheit_temperature − 32) * 5/9;
+}
 ```
 4. 🎖The function below returns true if the parameter age is greater than 18. Otherwise it asks for a confirmation and returns its result:
 
@@ -68,12 +88,22 @@ Is there any difference in the behavior of these two variants? If there is what 
 
 ```js
 // Your code goes here
-
-// After writing code uncomment to check the answer.
-// pow(3, 2); // 9
-// pow(3, 3); // 27
-// pow(1, 100); // 1
-// pow(-31, 2); // "The number below 1 is not allowed"
+function pow(x, n) {
+  if(n < 0) {
+    alert("The number below 1 is not allowed");
+  }
+else if (x < 0) {
+alert("The number below 1 is not allowed");
+}
+  else {
+    alert(x**n);
+  }
+}
+After writing code uncomment to check the answer.
+pow(3, 2); // 9
+pow(3, 3); // 27
+pow(1, 100); // 1
+pow(-31, 2); // "The number below 1 is not allowed"
 
 6. 🎖Write a program that asks the user for a number n and gives them the possibility to choose between computing the sum and computing the product of 1,…,n. Return the result accordingly.
 
@@ -84,6 +114,8 @@ Is there any difference in the behavior of these two variants? If there is what 
 
 ```js
 // your code goes here
+var n = +prompt("enter the your desired number");
+console.log((n*(n+1))/2);
 ```
 7. 🎖Modify the previous program such that only multiples of 5 or 7 are considered in the sum, e.g. n = 20 (5,7,10,14,15,20) 71
 
@@ -95,7 +127,15 @@ Is there any difference in the behavior of these two variants? If there is what 
 
 ```js
 // Your code here.
+function min(x, y) {
+  if (x <= y) {
+    console.log(x);
+  }
+  else {
+    console(y);
+  }
 
+}
 console.log(min(0, 10));
 // → 0
 console.log(min(0, -10));
