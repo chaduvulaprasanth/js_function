@@ -6,9 +6,11 @@
 
 ```js
 // your code goes here
-function calculateDogAge(age) {
+function calculateDogAge(age,conversion) {
 var dogage = age*7;
+var puppyage = age*conversion;
 console.log(`Your doggie is ${dogage} years old in dog years!`);
+console.log(`Your doggie is ${puppyage} years old in dog years!`);
 }
 
 
@@ -22,10 +24,9 @@ console.log(`Your doggie is ${dogage} years old in dog years!`);
 ```js
 // your code goes here
 function calculateSupply(age, amountperday) {
-  var max_age = 40;
-  cons
-  
-
+  var amountperyear = amountperday*365;
+  var restoflife = (40 - age)*amountperyear;
+  console.log(restoflife);
 }
 ```
 3. 🎖Create a function called celsiusToFahrenheit:
@@ -42,9 +43,10 @@ function celsiusToFahrenheit(celsius_temperature) {
   console.log(fahrenheit_temperature);
 
 }
-function fahrenheit_temperature(fahrenheit_temperature) {
-  var celsius_temperature = (fahrenheit_temperature − 32) * 5/9;
+function fahrenheitToCelsius(fahrenheit_temperature) {
+  var celsius_temperature = (fahrenheit_temperature - 32) * 5/9;
 }
+
 ```
 4. 🎖The function below returns true if the parameter age is greater than 18. Otherwise it asks for a confirmation and returns its result:
 
@@ -61,6 +63,9 @@ function checkAge(age) {
   4.1 🎖Convert the above function using ternary operator.
   ```js
   // your code goes here
+ function checkAge(age) {
+  ((age > 18) ? true : "Did parents allow you?" )
+}
   ```
 
   4.2 🎖Convert the above function using `||` operator.
@@ -79,6 +84,7 @@ function checkAge(age) {
 }
 ```
 Is there any difference in the behavior of these two variants? If there is what is that?
+no the behaviour is same.
 
 
 5. 🎖 Write a function pow(x,n) that returns x in power n.
@@ -107,20 +113,61 @@ pow(-31, 2); // "The number below 1 is not allowed"
 
 6. 🎖Write a program that asks the user for a number n and gives them the possibility to choose between computing the sum and computing the product of 1,…,n. Return the result accordingly.
 
-```js
+js
 // your code goes here
+
+function computing() {
+  var n = +prompt("number")
+  var operator = prompt("operator")
+  if(operator == "+") {
+    var add=0;
+    for (let i=0; i<=n; i++) {
+    add += i;
+    }
+    console.log(add);
+  }
+  else if (operator == "*") {
+    var product=1;
+    for (let i=1; i<=n; i++) {
+    product *= i;
+    }
+    console.log(product)
+  }
+}
+
+
 ```
 6. 🎖Write a program that asks the user for a number n using prompt and prints the sum of the numbers 1 to n
 
 ```js
 // your code goes here
-var n = +prompt("enter the your desired number");
-console.log((n*(n+1))/2);
+function sum() {
+  var n = +prompt("number")
+  var operator = prompt("operator")
+  var add=0;
+  for (let i=1; i<=n; i++) {
+    add += i;
+  }
+  console.log(add);
+}
+// var n = +prompt("enter the your desired number");
+// console.log((n*(n+1))/2);
 ```
 7. 🎖Modify the previous program such that only multiples of 5 or 7 are considered in the sum, e.g. n = 20 (5,7,10,14,15,20) 71
 
 ```js
 // your code goes here
+function sum() {
+  var n = +prompt("number")
+  var operator = prompt("operator")
+  var add = 0;
+  for (let i=1; i<=n;i++) {
+    if(i%5==0 || i%7==0) {
+      add +=i;
+    }
+  }
+  console.log(add);
+}
 ```
 
 8. 🎖Write a function `min` that takes two arguments and returns their minimum.
@@ -132,7 +179,7 @@ function min(x, y) {
     console.log(x);
   }
   else {
-    console(y);
+    console.log(y);
   }
 
 }
